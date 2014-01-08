@@ -1,0 +1,6 @@
+#search-form fieldset,
+.button,
+.circle,
+.quote-content{behavior: url(js/PIE.htc); position:relative;}
+
+body{min-width:960px;}

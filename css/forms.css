@@ -1,0 +1,108 @@
+/*---- Search form ----*/
+#search{
+	position:relative;
+	vertical-align:top;
+	width:198px;
+	float:left;
+	padding-right:1px;
+	margin-top:-2px;
+}
+	#search fieldset {
+		border:none;
+		padding:0;
+		overflow:hidden;
+		background:#f9f9f9;
+		border-radius:5px;
+		-moz-border-radius:5px;
+		-webkit-border-radius:5px;
+		padding:0 5px;
+		margin-bottom:2px;
+	}
+		#search label {display:block; float:left;}
+		#search input{
+			padding:5px 5px 6px;
+			background:none;
+			border:none;
+			font:12px Arial, Helvetica, sans-serif;
+			color:#7d7d7d;
+			margin:0;
+			outline:none;
+			width:140px;
+		}
+	#search a{
+		float:right;
+		display:block;
+		width:21px;
+		height:26px;
+		background:url(../images/search-button.gif) center 9px no-repeat;
+		text-decoration:none;
+		cursor:pointer;
+	}
+		#search a:hover{background-position:center -40px; text-decoration:none;}
+
+/***** contact form *****/
+#contact-form {
+	position:relative;
+	vertical-align:top;
+	width:602px;
+	z-index:1;
+}
+	#contact-form fieldset {border:none; padding:0; width:100%; overflow:hidden;}
+		#contact-form label {display:inline-block; min-height:44px; position:relative;}
+			#contact-form .message{min-height:278px;}
+			#contact-form input, #contact-form textarea {
+				padding:9px 15px 10px;
+				margin:0;
+				font: 12px Arial, Helvetica, sans-serif;
+				color:#85786e;
+        background: url('../images/fields.png') repeat;
+				outline:none;
+				border:1px solid #453f39;
+				width:321px;
+			}
+			#contact-form .area .error {float:none;}
+			#contact-form textarea {
+				width:570px;
+				height:227px;
+				resize:none;
+				overflow:auto;
+			}
+			#contact-form .success {
+        display:none;
+        position: absolute;
+        width: 100%;
+        background: #fff;
+        padding: 20px 0;
+        text-align: center;
+        z-index: 99;
+        top: 0;
+        left: 0;
+      }
+			#contact-form .error,
+			#contact-form .empty {
+				color:#f00;
+				font-size:11px;
+				line-height:14px;
+				display:none;
+				overflow:hidden;
+        position: absolute;
+        right: 5px;
+        top: 5px;
+			}
+.buttons-wrapper{text-align:right; position:relative; padding-right:1px; margin-bottom: 18px;}
+.buttons-wrapper a {cursor:pointer;}
+	.buttons-wrapper a[data-type="reset"]{margin-right:20px;}
+
+@media only screen and (max-width: 995px) {
+	/***** contact form *****/
+	#contact-form{width:100%;}
+	#contact-form textarea{width:460px;}
+}
+@media only screen and (max-width: 767px){
+	/***** contact form *****/
+	#contact-form input, #contact-form textarea{width:388px;}
+}
+@media only screen and (max-width: 479px){
+	/***** contact form *****/
+	#contact-form input, #contact-form textarea{width:268px;}
+}
